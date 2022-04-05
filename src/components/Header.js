@@ -58,7 +58,7 @@ export default function Header() {
             <nav className="navbar navbar-expand navbar-dark bg-dark">
                 <div className="container">
                     <NavLink className="navbar-brand" to="/">
-                        Rezoomex-nft
+                        Profile-nft
                     </NavLink>
                     <div>
                         <ul className="navbar-nav ml-auto">

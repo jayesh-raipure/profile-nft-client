@@ -25,13 +25,15 @@
     -->
   <title>React App</title>
   <script>
-    console.log("Jayesh....");
     ethereum.on('accountsChanged', (accounts) => {
       console.log("account changes!")
       console.log(accounts)
       if (!accounts.length) {
         localStorage.setItem('metaMask_token', "")
         window.location = "/login"
+      } else{
+        localStorage.setItem('metaMask_token', accounts[0]);
+        window.location = "/"
       }
     });
   </script>

@@ -36,7 +36,7 @@ function Profile() {
                 console.error("Error:", error?.response?.data);
             });
             alert("Profile updated successfully!");
-            window.location = "/myProfile"
+            window.location = "/"
         } else{
             let unique_id = `${myForm.elements['first_name'].value}_${myForm.elements['last_name'].value}_${uuidv4()}`
             updatedData.id = unique_id;
